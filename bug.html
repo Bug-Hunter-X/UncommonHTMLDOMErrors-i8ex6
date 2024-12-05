@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is inside a div.
+  </div>
+
+  <script>
+    // Incorrect way to select element, leading to unexpected behavior
+    var element = document.getElementById('myDiv');
+    if (element) {
+        element.style.display = "none";
+    }
+
+    // another incorrect way to get elements, might not work as intended
+    var elements = document.getElementsByTagName('div');
+    if(elements.length > 0){
+        elements[0].style.color = "red";
+    }
+
+  </script>
+</body>
+</html>
